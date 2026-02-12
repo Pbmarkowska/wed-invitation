@@ -1,8 +1,25 @@
+import { CeremonySection } from "./components/CeremonySection";
+import { DateSection } from "./components/DateSection";
+import { GiftsSection } from "./components/GiftsSection";
+import { Hero } from "./components/Hero";
+import { ReceptionSection } from "./components/ReceptionSection";
+import { RSVPSection } from "./components/RSVPSection";
+import { WhatWillBeSection } from "./components/WhatWillBeSection";
+import { WhatWontBeSection } from "./components/WhatWontBeSection";
 
- export default function Home() {
+
+
+export default function Home() {
   return (
-    <div className="text-4xl font-bold text-pink-600 p-8">
-      Save the date 💍 19.09.2026
-    </div>
-  )
+    <main>
+      <Hero />
+      <DateSection />
+      <CeremonySection />
+      <ReceptionSection />
+      <WhatWillBeSection />
+      <WhatWontBeSection />
+      <RSVPSection />
+      <GiftsSection />
+    </main>
+  );
 }

@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Layout } from "./components/Layout";
+import { PT_Serif, Meow_Script } from "next/font/google"
+
+const ptSerif = PT_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-serif",
+})
+
+const meowScript = Meow_Script({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-script",
+})
 
 
 export const metadata: Metadata = {
@@ -10,16 +23,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body>
-        <Layout>
-          {children}
-        </Layout>
+    <html lang="pl">
+      <body className={`${ptSerif.variable} ${meowScript.variable}`}>
+        <Layout>{children}</Layout>
       </body>
     </html>
-  );
+  )
 }
