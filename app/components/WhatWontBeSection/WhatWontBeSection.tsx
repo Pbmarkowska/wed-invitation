@@ -1,3 +1,3 @@
 export function WhatWontBeSection() {
-    return (<div></div>)
+  return <div></div>;
 }

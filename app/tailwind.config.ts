@@ -1,15 +1,15 @@
-import type { Config } from "tailwindcss"
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["var(--font-serif)"],
-        script: ["var(--font-script)"],
+        serif: ['var(--font-serif)'],
+        script: ['var(--font-script)'],
       },
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;

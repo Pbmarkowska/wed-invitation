@@ -1,1 +1,1 @@
-export { WhatWillBeSection } from './WhatWillBeSection'
+export { WhatWillBeSection } from './WhatWillBeSection';

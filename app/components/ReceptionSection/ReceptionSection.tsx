@@ -1,3 +1,3 @@
 export function ReceptionSection() {
-    return (null)
+  return null;
 }

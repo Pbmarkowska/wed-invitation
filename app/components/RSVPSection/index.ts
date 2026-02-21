@@ -1,1 +1,1 @@
-export { RSVPSection } from './RSVPSection'
+export { RSVPSection } from './RSVPSection';

@@ -1,3 +1,3 @@
 export function WhatWillBeSection() {
-    return null
+  return null;
 }

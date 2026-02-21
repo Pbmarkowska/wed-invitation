@@ -1,3 +1,3 @@
 export function RSVPSection() {
-    return (<div></div>)
+  return <div></div>;
 }

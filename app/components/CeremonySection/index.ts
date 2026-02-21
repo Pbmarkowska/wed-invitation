@@ -1,1 +1,1 @@
-export { CeremonySection } from './CeremonySection'
+export { CeremonySection } from './CeremonySection';

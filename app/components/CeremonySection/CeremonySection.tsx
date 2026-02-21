@@ -1,3 +1,3 @@
 export function CeremonySection() {
-    return (<div></div>)
+  return <div></div>;
 }
