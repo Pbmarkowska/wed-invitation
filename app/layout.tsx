@@ -1,19 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Layout } from './components/Layout';
-import { PT_Serif, Meow_Script } from 'next/font/google';
-
-const ptSerif = PT_Serif({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-serif',
-});
-
-const meowScript = Meow_Script({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-script',
-});
+import { ptSerif } from './utils/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <body className={`${ptSerif.variable} ${meowScript.variable}`}>
+      <body className={ptSerif.className}>
         <Layout>{children}</Layout>
       </body>
     </html>

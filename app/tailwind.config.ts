@@ -7,6 +7,9 @@ const config: Config = {
         serif: ['var(--font-serif)'],
         script: ['var(--font-script)'],
       },
+      colors: {
+        weddingRed: '#D8AFB8',
+      },
     },
   },
   plugins: [],

@@ -1,12 +1,16 @@
+import SectionContainer from '@/app/components/SectionContainer';
+import { cn } from '@/app/utils/common';
+import { meowScript, ptSerif } from '@/app/utils/fonts';
+
 export function Hero() {
   return (
-    <section className="py-32">
-      <div>
-        <section className="py-32 text-center">
-          <h1 className="font-script text-7xl">Bierzemy ślub 💍 19.09.2026</h1>
-          <p className="font-serif text-lg">19 września 2026</p>
-        </section>
-      </div>
-    </section>
+    <>
+      <SectionContainer bgClass="bg-gray-200">
+        <h1 className={cn(meowScript.className, 'text-6xl')}>Bierzemy ślub</h1>
+      </SectionContainer>
+      <SectionContainer bgClass="bg-weddingRed">
+        <h1 className={cn(ptSerif.className, 'text-6xl')}>Inny napis</h1>
+      </SectionContainer>
+    </>
   );
 }
