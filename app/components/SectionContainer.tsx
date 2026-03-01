@@ -3,20 +3,17 @@ import { cn } from '../utils/common';
 
 type SectionContainerProps = {
   children: ReactNode;
-  bgClass?: string;
   className?: string;
 };
 
 export default function SectionContainer({
   children,
-  bgClass = 'bg-gray-200',
   className,
 }: SectionContainerProps) {
   return (
     <section
       className={cn(
-        'w-full min-h-screen flex justify-center',
-        bgClass,
+        'w-full min-h-screen flex justify-center bg-gray-200',
         className
       )}
     >

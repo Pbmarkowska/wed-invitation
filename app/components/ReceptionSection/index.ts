@@ -1,1 +1,0 @@
-export { ReceptionSection } from './ReceptionSection';
