@@ -13,11 +13,11 @@ export default function SectionContainer({
   return (
     <section
       className={cn(
-        'w-full min-h-screen flex justify-center bg-gray-200',
+        'w-full h-[1024px] flex flex-col items-center bg-gray-200',
         className
       )}
     >
-      <div className="w-full max-w-[1200px] px-6 md:px-12">{children}</div>
+      <div className="w-full max-w-[1024px] px-6 md:px-12">{children}</div>
     </section>
   );
 }

@@ -10,7 +10,7 @@ import couplePortait4 from '@/app/assets/photos/couple-portrait-4.jpg';
 export function Hero() {
   return (
     <>
-      <SectionContainer className="bg-gray-200 flex-col relative justify-center">
+      <SectionContainer className="bg-gray-200 flex-col relative justify-center z-20">
         <div className="mt-[75px] flex flex-col items-center">
           <Image
             src={redHeartSvg}
@@ -24,10 +24,10 @@ export function Hero() {
             )}
           >
             Bierzemy ślub
-            <div className="mt-[10px] flex flex-col items-center relative z-10">
-              <Image src={horizontalLinesSvg} alt="horizontal-lines" />
-            </div>
           </h1>
+          <div className="mt-[10px] flex flex-col items-center relative z-10 top-[200px] right-[150px]">
+            <Image src={horizontalLinesSvg} alt="horizontal-lines" />
+          </div>
         </div>
 
         <Image
