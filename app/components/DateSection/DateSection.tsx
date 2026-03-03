@@ -1,10 +1,12 @@
 import SectionContainer from '../SectionContainer';
-import SectionHeader from '../SectionHeader';
 
 export function DateSection() {
   return (
-    <SectionContainer className="bg-weddingRed">
-      <SectionHeader className="italic underline">15:00</SectionHeader>
+    <SectionContainer
+      className="bg-weddingRed"
+      title="15:00"
+      titleClassName="italic underline"
+    >
       <section className="py-24 text-center mt-[200px]">
         <div className="grid grid-cols-3 gap-8">
           <div>

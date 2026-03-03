@@ -1,12 +1,10 @@
 import { cn } from '@/app/utils/common';
 import SectionContainer from '../SectionContainer';
-import SectionHeader from '../SectionHeader';
 import { meowScript } from '@/app/utils/fonts';
 
 export function CeremonySection() {
   return (
-    <SectionContainer className="bg-gray-200">
-      <SectionHeader>Szczegóły</SectionHeader>
+    <SectionContainer className="bg-gray-200" title="Szczegóły">
       <div className="flex flex-col gap-2 relative top-[50px]">
         <p
           className={cn(
