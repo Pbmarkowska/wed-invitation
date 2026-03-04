@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
 import { cn } from '../utils/common';
 import { ptSerif } from '../utils/fonts';
 import Image from 'next/image';
@@ -7,8 +7,9 @@ import { StaticImageData } from 'next/image';
 type SectionHeaderProps = {
   children: ReactNode;
   className?: string;
-  image?: StaticImageData | string;
+  image?: StaticImageData | string | CSSProperties;
   imageAlt?: string;
+  imageClassName?: string;
 };
 
 export default function SectionHeader({
@@ -16,22 +17,29 @@ export default function SectionHeader({
   className,
   image,
   imageAlt,
+  imageClassName,
 }: SectionHeaderProps) {
   return (
     <h1
       className={cn(
         ptSerif.className,
-        'text-6xl text-weddingRedDark flex flex-col items-center justify-center mb-10 pt-20',
+        'text-6xl text-weddingRedDark flex flex-col items-center justify-center mb-10 pt-10',
         className
       )}
     >
-      {image && (
-        <Image
-          src={image}
-          alt={imageAlt ?? ''}
-          className="mb-4 object-contain"
-        />
-      )}
+      {image &&
+        (typeof image === 'object' && !('src' in image) ? (
+          <div
+            style={image as CSSProperties}
+            className={cn('w-16 h-16 mb-4 bg-weddingRedDark', imageClassName)}
+          />
+        ) : (
+          <Image
+            src={image as any}
+            alt={imageAlt ?? ''}
+            className={cn('mb-4 object-contain', imageClassName)}
+          />
+        ))}
       {children}
     </h1>
   );

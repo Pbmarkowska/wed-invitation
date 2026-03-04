@@ -8,8 +8,11 @@ type SectionContainerProps = {
   className?: string;
   title?: string;
   titleClassName?: string;
-  titleImage?: StaticImageData | string;
+  titleImage?: StaticImageData | string | React.CSSProperties;
   titleImageAlt?: string;
+  titleImageClassName?: string;
+  fullHeight?: boolean;
+  innerClassName?: string;
 };
 
 export default function SectionContainer({
@@ -19,16 +22,27 @@ export default function SectionContainer({
   titleClassName,
   titleImage,
   titleImageAlt,
+  titleImageClassName,
+  fullHeight,
+  innerClassName,
 }: SectionContainerProps) {
   return (
     <section
-      className={cn('w-full h-[1024px] flex flex-col items-center', className)}
+      className={cn('w-full h-[800px] flex flex-col items-center', className)}
     >
-      <div className="w-full max-w-[1024px] px-6 md:px-12">
+      <div
+        className={cn(
+          'w-full max-w-[1024px] flex flex-col',
+          !innerClassName && 'px-6 md:px-12',
+          fullHeight && 'h-full',
+          innerClassName
+        )}
+      >
         <SectionHeader
           className={titleClassName}
           image={titleImage}
           imageAlt={titleImageAlt}
+          imageClassName={titleImageClassName}
         >
           {title}
         </SectionHeader>

@@ -3,14 +3,17 @@ import Image from 'next/image';
 import blackHeartSvg from '@/app/assets/arrows/lines-heart-black.svg';
 import phoneIconSvg from '@/app/assets/icons/Phone.svg';
 import mailIconSvg from '@/app/assets/icons/Mail.svg';
+import { maskSvg } from '@/app/utils/common';
 
 export function RSVPSection() {
   return (
     <SectionContainer
-      className="bg-weddingRed flex-col relative justify-center z-20"
+      className="bg-weddingRed flex-col relative"
       title="RSVP i kontakt:"
-      titleImage={blackHeartSvg}
+      titleClassName="pt-10"
+      titleImage={maskSvg(blackHeartSvg)}
       titleImageAlt="black heart"
+      titleImageClassName="w-[138px] h-[123px] hover:bg-weddingRedLight transition-colors"
     >
       <ul className="items-center flex flex-col gap-y-2 mx-auto justify-center">
         <li className="flex items-center gap-[8px]">

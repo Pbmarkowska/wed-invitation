@@ -10,6 +10,7 @@ const config: Config = {
       colors: {
         weddingRed: '#D8AFB8',
         weddingRedDark: '#89001D',
+        weddingRedLight: '#F1476B',
       },
     },
   },
