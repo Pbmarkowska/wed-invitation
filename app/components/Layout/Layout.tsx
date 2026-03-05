@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { PT_Serif } from 'next/font/google';
 import { cn } from '@/app/utils/common';
+import { Metadata } from 'next';
 
 const mainFont = PT_Serif({
   weight: '400',
