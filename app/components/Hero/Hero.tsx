@@ -24,9 +24,10 @@ export function Hero() {
           >
             Bierzemy ślub
           </h1>
-          <div className="mt-[10px] flex flex-col items-center relative z-10 top-[100px] right-[150px]">
-            <Image src={horizontalLinesSvg} alt="horizontal-lines" />
-          </div>
+          <div
+            className="mt-[10px] flex flex-col items-center relative z-10 top-[100px] right-[150px] w-[535px] h-[96px] bg-[#89001D] hover:bg-weddingRedLight transition-colors"
+            style={maskSvg(horizontalLinesSvg)}
+          />
         </div>
 
         <Image
