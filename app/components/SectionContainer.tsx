@@ -28,7 +28,10 @@ export default function SectionContainer({
 }: SectionContainerProps) {
   return (
     <section
-      className={cn('w-full h-[800px] flex flex-col items-center', className)}
+      className={cn(
+        'w-full py-10 md:py-16 flex flex-col items-center',
+        className
+      )}
     >
       <div
         className={cn(

@@ -8,16 +8,43 @@ import { ThankYouSection } from './components/ThankYouSection/ThankYouSection';
 import { WhatWillBeSection } from './components/WhatWillBeSection';
 import { WhatWontBeSection } from './components/WhatWontBeSection';
 
+import arrowDown2 from '@/app/assets/arrows/arrow-down-2.svg';
+import { cn, maskSvg } from './utils/common';
+
+function SectionDivider({ icon }: { icon: any }) {
+  // We use object-cover equivalent behavior or precise sizing to ensure both SVG files scale to the exact same visual height/width
+  return (
+    <div className="flex justify-center -my-12 md:-my-16 relative z-10 pointer-events-none">
+      <div
+        className="bg-weddingRedDark opacity-60 w-[50px] h-[100px] md:w-[70px] md:h-[140px]"
+        style={{
+          ...maskSvg(icon),
+          WebkitMaskSize: 'contain',
+          WebkitMaskPosition: 'center',
+          WebkitMaskRepeat: 'no-repeat',
+        }}
+      />
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main>
       <Hero />
+      <SectionDivider icon={arrowDown2} />
       <DateSection />
+      <SectionDivider icon={arrowDown2} />
       <CeremonySection />
+      <SectionDivider icon={arrowDown2} />
       <WhatWillBeSection />
+      <SectionDivider icon={arrowDown2} />
       <WhatWontBeSection />
+      <SectionDivider icon={arrowDown2} />
       <RSVPSection />
+      <SectionDivider icon={arrowDown2} />
       <GiftsSection />
+      <SectionDivider icon={arrowDown2} />
       <ThankYouSection />
     </main>
   );

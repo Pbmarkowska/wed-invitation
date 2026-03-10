@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <body className={ptSerif.className}>
+      <body className={`${ptSerif.className} bg-weddingCream`}>
         <Layout>{children}</Layout>
       </body>
     </html>

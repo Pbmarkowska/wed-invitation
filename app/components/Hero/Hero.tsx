@@ -10,36 +10,38 @@ import couplePortait4 from '@/app/assets/photos/couple-portrait-4.jpg';
 export function Hero() {
   return (
     <>
-      <SectionContainer className="bg-gray-200 flex-col relative justify-center z-20">
-        <div className="mt-[75px] flex flex-col items-center">
+      <SectionContainer className="bg-transparent flex-col relative justify-center z-20 pt-0 md:pt-4 pb-16 px-8">
+        <div className="flex flex-col items-center max-w-lg mx-auto relative mt-0">
+          {/* Top Decorative Heart */}
           <div
-            className="absolute top-[75px] left-1/2 -translate-x-1/2 w-[138px] h-[123px] bg-[#89001D] hover:bg-weddingRedLight transition-colors"
+            className="w-[100px] h-[90px] md:w-[138px] md:h-[123px] bg-weddingRedDark hover:bg-weddingRedLight transition-colors mb-4"
             style={maskSvg(redHeartSvg)}
           />
+          {/* Large Title Text overlapping the image */}
           <h1
             className={cn(
               meowScript.className,
-              'text-8xl relative z-10 top-[100px] right-[150px]'
+              'text-7xl md:text-8xl text-center text-weddingRedDark relative z-30 mb-16 md:mb-20'
             )}
           >
             Bierzemy ślub
           </h1>
-          <div
-            className="mt-[10px] flex flex-col items-center relative z-10 top-[100px] right-[150px] w-[535px] h-[96px] bg-[#89001D] hover:bg-weddingRedLight transition-colors"
-            style={maskSvg(horizontalLinesSvg)}
-          />
-        </div>
+          {/* Main Couple Portrait */}
+          <div className="relative z-20 mt-4 md:mt-8">
+            <Image
+              src={couplePortait3}
+              alt="Patrycja & Marcin Portrait"
+              className="rounded-[32px] w-[280px] md:w-[400px] h-auto object-cover shadow-xl border-4 border-weddingCream"
+            />
 
-        <Image
-          src={couplePortait3}
-          alt="couple portrait 3"
-          className="rounded-[30px] w-[300px] h-auto absolute top-[15px] left-[55px]"
-        />
-        <Image
-          src={couplePortait4}
-          alt="couple portrait 4"
-          className="rounded-[30px] w-[300px] h-auto absolute top-[200px] right-[55px]"
-        />
+            {/* Overlay Decorative Lines */}
+            <div
+              className="absolute bottom-[-20px] md:bottom-[-40px] right-[-30px] md:right-[-60px] w-[200px] h-[36px] md:w-[350px] md:h-[63px] bg-weddingRedDark hover:bg-weddingRedLight transition-colors z-30"
+              style={maskSvg(horizontalLinesSvg)}
+            />
+          </div>
+          <div className="mt-[60px] md:mt-[100px]" /> {/* Spacer */}
+        </div>
       </SectionContainer>
     </>
   );

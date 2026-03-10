@@ -9,7 +9,7 @@ import { ObfuscatedText } from '../ObfuscatedText';
 export function RSVPSection() {
   return (
     <SectionContainer
-      className="bg-weddingRed flex-col relative"
+      className="bg-transparent flex-col relative"
       title="RSVP i kontakt:"
       titleClassName="pt-10"
       titleImage={maskSvg(blackHeartSvg)}
@@ -43,10 +43,20 @@ export function RSVPSection() {
         </li>
       </ul>
       <p className="text-4xl text-weddingRedDark mt-[40px] flex flex-col items-center">
-        Napisz nam SMS lub maila:
+        Napisz nam SMS, maila lub wypełnij ankietę{' '}
+        <a
+          className="mt-6 px-10 py-3 bg-weddingRedDark text-white rounded-full font-bold tracking-wider hover:bg-weddingRedLight hover:shadow-lg transition-all duration-300 shadow-md transform hover:-translate-y-1"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeIj1BhVM1A4EqLGAh_LJX95DS7N6ubaPSAxKM6Lv6l_wGp2g/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          klik!
+        </a>
       </p>
-      <p className="text-center mt-[20px]">
-        Potwierdź udział, nocleg, alergie pokarmowe i czy pijesz alkohol
+      <p className="text-center text-gray-700 text-lg md:text-xl font-light tracking-wide mt-[20px] max-w-lg mx-auto">
+        Potwierdź udział, daj znać czy potrzebujesz noclegu, daj nam znać o
+        swoich preferencjach żywieniowych i alergiach pokarmowych, i czy pijesz
+        alkohol.
       </p>
     </SectionContainer>
   );

@@ -11,6 +11,7 @@ const config: Config = {
         weddingRed: '#D8AFB8',
         weddingRedDark: '#89001D',
         weddingRedLight: '#F1476B',
+        weddingCream: '#FDFCFB',
       },
     },
   },
