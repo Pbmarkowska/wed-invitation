@@ -21,7 +21,7 @@ export function Hero() {
           <h1
             className={cn(
               meowScript.className,
-              'text-6xl md:text-8xl text-center text-weddingRedDark relative z-30 mb-16 md:mb-10'
+              'text-6xl md:text-8xl text-center text-[#6A0016] opacity-90 relative z-30 mb-16 md:mb-10'
             )}
           >
             Zapraszamy Was na ślub

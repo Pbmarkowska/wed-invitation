@@ -17,7 +17,7 @@ function SectionDivider({ icon }: { icon: any }) {
   return (
     <div className="flex justify-center -my-12 md:-my-16 relative z-10 pointer-events-none">
       <div
-        className="bg-weddingRedDark opacity-60 w-[80px] h-[160px] md:w-[200px] md:h-[200px]"
+        className="bg-[#6A0016] opacity-90 w-[80px] h-[160px] md:w-[200px] md:h-[200px]"
         style={{
           ...maskSvg(icon),
           WebkitMaskSize: 'contain',
