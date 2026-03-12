@@ -42,10 +42,10 @@ export function RSVPSection() {
           </p>
         </li>
       </ul>
-      <p className="text-4xl text-weddingRedDark mt-[40px] flex flex-col items-center">
+      <p className="text-xl text-weddingRedDark mt-[40px] flex flex-col items-center gap-4">
         Napisz nam SMS, maila lub wypełnij ankietę{' '}
         <a
-          className="mt-6 px-10 py-3 bg-weddingRedDark text-white rounded-full font-bold tracking-wider hover:bg-weddingRedLight hover:shadow-lg transition-all duration-300 shadow-md transform hover:-translate-y-1"
+          className="px-7 py-2 border border-weddingRedDark text-weddingRedDark rounded-full text-sm tracking-widest hover:bg-weddingRedDark hover:text-white transition-all duration-300"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeIj1BhVM1A4EqLGAh_LJX95DS7N6ubaPSAxKM6Lv6l_wGp2g/viewform?usp=publish-editor"
           target="_blank"
           rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export function RSVPSection() {
           klik!
         </a>
       </p>
-      <p className="text-center text-gray-700 text-lg md:text-xl font-light tracking-wide mt-[20px] max-w-lg mx-auto">
+      <p className="text-center text-gray-600 text-sm tracking-wide mt-[16px] max-w-md mx-auto leading-relaxed">
         Potwierdź udział, daj znać czy potrzebujesz noclegu, daj nam znać o
         swoich preferencjach żywieniowych i alergiach pokarmowych, i czy pijesz
         alkohol.

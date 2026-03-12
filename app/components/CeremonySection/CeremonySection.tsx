@@ -28,10 +28,6 @@ export function CeremonySection() {
             </p>
           </div>
         </div>
-
-        {/* Decorative Divider Line */}
-        <div className="w-px h-16 bg-weddingRedDark/30" />
-
         {/* Reception Section */}
         <div className="flex flex-col items-center text-center">
           <p
@@ -43,7 +39,7 @@ export function CeremonySection() {
             16:00 - 22:00
           </p>
           <p className="text-3xl md:text-4xl text-black mb-2 font-medium tracking-wide">
-            Restauracja "Rusałka"
+            Restauracja Rusalka
           </p>
           <div className="text-gray-600 text-sm md:text-base leading-relaxed">
             <p>ul. Golęcińska 27</p>

@@ -23,7 +23,7 @@ export default function SectionHeader({
     <h1
       className={cn(
         ptSerif.className,
-        'text-6xl text-weddingRedDark flex flex-col items-center justify-center mb-10 pt-10',
+        'text-5xl font-normal tracking-wide text-weddingRedDark flex flex-col items-center justify-center mb-10 pt-10',
         className
       )}
     >

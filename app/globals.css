@@ -25,3 +25,23 @@ body {
   color: var(--foreground);
   font-family: var(--font-serif);
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: var(--fade-in-transform, translateY(28px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInOnly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

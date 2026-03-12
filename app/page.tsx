@@ -8,15 +8,16 @@ import { ThankYouSection } from './components/ThankYouSection/ThankYouSection';
 import { WhatWillBeSection } from './components/WhatWillBeSection';
 import { WhatWontBeSection } from './components/WhatWontBeSection';
 
+import arrowDown1 from '@/app/assets/arrows/arrow-down-1.svg';
 import arrowDown2 from '@/app/assets/arrows/arrow-down-2.svg';
-import { cn, maskSvg } from './utils/common';
+import horizontalLines from '@/app/assets/arrows/lines-horizontal.svg';
+import { maskSvg } from './utils/common';
 
 function SectionDivider({ icon }: { icon: any }) {
-  // We use object-cover equivalent behavior or precise sizing to ensure both SVG files scale to the exact same visual height/width
   return (
     <div className="flex justify-center -my-12 md:-my-16 relative z-10 pointer-events-none">
       <div
-        className="bg-weddingRedDark opacity-60 w-[50px] h-[100px] md:w-[70px] md:h-[140px]"
+        className="bg-weddingRedDark opacity-60 w-[80px] h-[160px] md:w-[200px] md:h-[200px]"
         style={{
           ...maskSvg(icon),
           WebkitMaskSize: 'contain',
@@ -32,7 +33,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <SectionDivider icon={arrowDown2} />
       <DateSection />
       <SectionDivider icon={arrowDown2} />
       <CeremonySection />
@@ -40,7 +40,6 @@ export default function Home() {
       <WhatWillBeSection />
       <SectionDivider icon={arrowDown2} />
       <WhatWontBeSection />
-      <SectionDivider icon={arrowDown2} />
       <RSVPSection />
       <SectionDivider icon={arrowDown2} />
       <GiftsSection />
@@ -51,7 +50,7 @@ export default function Home() {
 }
 
 export const metadata: Metadata = {
-  title: 'Bierzemy ślub',
+  title: 'Zapraszamy Was na ślub',
   description: 'Zaproszenie na ślub Patrycji i Marcina',
   robots: {
     index: false,
