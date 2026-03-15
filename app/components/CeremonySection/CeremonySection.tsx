@@ -2,9 +2,9 @@ import { cn } from '@/app/utils/common';
 import SectionContainer from '../SectionContainer';
 import { meowScript } from '@/app/utils/fonts';
 
-export function CeremonySection() {
+export function CeremonySection({ id }: { id: string }) {
   return (
-    <SectionContainer className="bg-transparent" title="Szczegóły">
+    <SectionContainer className="bg-transparent" title="Szczegóły" id={id}>
       <div className="flex flex-col items-center justify-center gap-16 mt-8 w-full max-w-2xl mx-auto">
         {/* Church Section */}
         <div className="flex flex-col items-center text-center">
@@ -28,7 +28,7 @@ export function CeremonySection() {
             </p>
           </div>
         </div>
-        {/* Reception Section */}
+        {/* Party Section */}
         <div className="flex flex-col items-center text-center">
           <p
             className={cn(
@@ -45,7 +45,8 @@ export function CeremonySection() {
             <p>ul. Golęcińska 27</p>
             <p>60-626 Poznań</p>
             <p className="mt-2 text-xs md:text-sm italic opacity-80">
-              (płatny parking)
+              (płatny parking - podajcie nam swoje numery rejestracyjne, a
+              zadbamy o miejsce dla Was)
             </p>
           </div>
         </div>

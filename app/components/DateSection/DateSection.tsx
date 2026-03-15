@@ -1,14 +1,13 @@
 import SectionContainer from '../SectionContainer';
 import { meowScript } from '../../utils/fonts';
 import { cn } from '../../utils/common';
-import Image from 'next/image';
-import couplePortrait5 from '@/app/assets/photos/couple_5.jpg';
 
-export function DateSection() {
+export function DateSection({ id }: { id: string }) {
   return (
     <SectionContainer
       className="bg-transparent h-auto py-20 mb-8 md:mb-8"
       innerClassName="flex flex-col items-center justify-center w-full"
+      id={id}
     >
       <div className="w-full max-w-[600px] border-y border-weddingRedDark/30 py-4">
         {/* Days Header */}

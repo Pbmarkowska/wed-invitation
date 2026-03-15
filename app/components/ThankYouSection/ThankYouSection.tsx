@@ -6,9 +6,9 @@ import malePortrait from '@/app/assets/photos/male_portait.jpg';
 import womanPortrait from '@/app/assets/photos/woman_portrait.jpg';
 import redHeartSvg from '@/app/assets/arrows/lines-heart-red.svg';
 
-export function ThankYouSection() {
+export function ThankYouSection({ id }: { id: string }) {
   return (
-    <SectionContainer className="bg-transparent py-16 md:py-24">
+    <SectionContainer className="bg-transparent py-16 md:py-24" id={id}>
       <div className="flex flex-col items-center justify-center mt-8 mb-20 md:mb-32 w-full max-w-4xl mx-auto relative px-4">
         {/* Portraits and Heart Container */}
         <div className="flex flex-row items-center justify-center gap-4 md:gap-12 mb-16 md:mb-24 relative z-20">

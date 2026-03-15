@@ -4,11 +4,11 @@ import pearlImage from '@/app/assets/photos/pearl_image.jpg';
 import { meowScript } from '../../utils/fonts';
 import { cn } from '../../utils/common';
 
-export function WhatWillBeSection() {
+export function WhatWillBeSection({ id }: { id: string }) {
   const items = [
     'Po ceremonii w kościele zapraszamy do Restauracji “Rusałka” na obiad, kolację i słodkie.',
-    'Nie będziemy tańczyć, ale wam nie zabraniamy.',
-    'Okolica jest piękna, więc pewnie zaprosimy was na spacer dookoła jeziora.',
+    'Nie będziemy tańczyć, ale Wam nie zabraniamy.',
+    'Okolica jest piękna, po obiedzie zaprosimy Was na spacer dookoła jeziora.',
     'W ramach rozrywki oferujemy tylko jedzenie i swoje towarzystwo.',
     'Będzie tort!',
     'Niektórzy goście nie piją alkoholu i prosimy o uszanowanie tego.',
@@ -16,7 +16,11 @@ export function WhatWillBeSection() {
   ];
 
   return (
-    <SectionContainer className="bg-transparent py-16" title="Co będzie?">
+    <SectionContainer
+      className="bg-transparent py-16"
+      title="Co będzie?"
+      id={id}
+    >
       <div className="relative mt-12 w-full max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-center gap-12">
         {/* Floating Photo (Right Side on Desktop) */}
         <div className="md:order-last relative z-20 flex-shrink-0 transform rotate-3 mt-8 md:mt-24">

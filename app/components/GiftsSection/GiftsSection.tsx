@@ -1,8 +1,8 @@
 import SectionContainer from '../SectionContainer';
 
-export function GiftsSection() {
+export function GiftsSection({ id }: { id: string }) {
   return (
-    <SectionContainer className="bg-transparent py-16" title="Gifty?">
+    <SectionContainer className="bg-transparent py-16" title="Gifty?" id={id}>
       <div className="flex flex-col items-center text-center gap-5 mt-6 w-full max-w-md mx-auto px-4">
         <p className="text-gray-500 text-base leading-relaxed">
           Wiemy, że eldorado się skończyło, ale jeśli chcecie nas obdarować, to

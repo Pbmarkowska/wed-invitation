@@ -1,16 +1,19 @@
 import SectionContainer from '@/app/components/SectionContainer';
 import { cn, maskSvg } from '@/app/utils/common';
-import { meowScript } from '@/app/utils/fonts';
+import { meowScript, ptSerif } from '@/app/utils/fonts';
 import Image from 'next/image';
 import redHeartSvg from '@/app/assets/arrows/lines-heart-red.svg';
 import horizontalLinesSvg from '@/app/assets/arrows/lines-horizontal.svg';
 import couplePortait3 from '@/app/assets/photos/couple-portrait-3.jpg';
 import couplePortait4 from '@/app/assets/photos/couple-portrait-4.jpg';
 
-export function Hero() {
+export function Hero({ id }: { id: string }) {
   return (
     <>
-      <SectionContainer className="bg-transparent flex-col relative justify-center z-20 pt-0 md:pt-4 pb-16 px-8 md:py-4">
+      <SectionContainer
+        className="bg-transparent flex-col relative justify-center z-20 pt-0 md:pt-4 pb-16 px-8 md:py-4"
+        id={id}
+      >
         <div className="flex flex-col items-center max-w-lg mx-auto relative mt-0">
           {/* Top Decorative Heart */}
           <div
@@ -42,16 +45,6 @@ export function Hero() {
                     alt="Patrycja & Marcin Portrait 2"
                     className="w-[180px] md:w-[260px] h-[240px] md:h-[350px] object-cover"
                   />
-                  <div className="absolute bottom-4 right-4 rtl opacity-60">
-                    <span
-                      className={cn(
-                        meowScript.className,
-                        'text-2xl text-black'
-                      )}
-                    >
-                      19.09
-                    </span>
-                  </div>
                 </div>
               </div>
 

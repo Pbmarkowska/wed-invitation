@@ -6,7 +6,7 @@ import mailIconSvg from '@/app/assets/icons/Mail.svg';
 import { maskSvg } from '@/app/utils/common';
 import { ObfuscatedText } from '../ObfuscatedText';
 
-export function RSVPSection() {
+export function RSVPSection({ id }: { id: string }) {
   return (
     <SectionContainer
       className="bg-transparent flex-col relative"
@@ -15,6 +15,7 @@ export function RSVPSection() {
       titleImage={maskSvg(blackHeartSvg)}
       titleImageAlt="black heart"
       titleImageClassName="w-[138px] h-[123px] hover:bg-weddingRedLight transition-colors"
+      id={id}
     >
       <ul className="items-center flex flex-col gap-y-2 mx-auto justify-center">
         <li className="flex items-center gap-[8px]">

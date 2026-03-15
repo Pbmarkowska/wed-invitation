@@ -13,6 +13,7 @@ type SectionContainerProps = {
   titleImageClassName?: string;
   fullHeight?: boolean;
   innerClassName?: string;
+  id?: string;
 };
 
 export default function SectionContainer({
@@ -25,9 +26,11 @@ export default function SectionContainer({
   titleImageClassName,
   fullHeight,
   innerClassName,
+  id,
 }: SectionContainerProps) {
   return (
     <section
+      id={id}
       className={cn(
         'w-full py-10 md:py-16 flex flex-col items-center',
         className

@@ -7,10 +7,10 @@ import { RSVPSection } from './components/RSVPSection';
 import { ThankYouSection } from './components/ThankYouSection/ThankYouSection';
 import { WhatWillBeSection } from './components/WhatWillBeSection';
 import { WhatWontBeSection } from './components/WhatWontBeSection';
+import { Footer } from './components/Footer';
+import { Navigation } from './components/Navigation';
 
-import arrowDown1 from '@/app/assets/arrows/arrow-down-1.svg';
 import arrowDown2 from '@/app/assets/arrows/arrow-down-2.svg';
-import horizontalLines from '@/app/assets/arrows/lines-horizontal.svg';
 import { maskSvg } from './utils/common';
 
 function SectionDivider({ icon }: { icon: any }) {
@@ -32,19 +32,21 @@ function SectionDivider({ icon }: { icon: any }) {
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <DateSection />
+      <Navigation />
+      <Hero id="hero" />
+      <DateSection id="date" />
       <SectionDivider icon={arrowDown2} />
-      <CeremonySection />
+      <CeremonySection id="ceremony" />
       <SectionDivider icon={arrowDown2} />
-      <WhatWillBeSection />
+      <WhatWillBeSection id="what-will-be" />
       <SectionDivider icon={arrowDown2} />
-      <WhatWontBeSection />
-      <RSVPSection />
+      <WhatWontBeSection id="what-wont-be" />
+      <RSVPSection id="rsvp" />
       <SectionDivider icon={arrowDown2} />
-      <GiftsSection />
+      <GiftsSection id="gifts" />
       <SectionDivider icon={arrowDown2} />
-      <ThankYouSection />
+      <ThankYouSection id="thank-you" />
+      <Footer />
     </main>
   );
 }

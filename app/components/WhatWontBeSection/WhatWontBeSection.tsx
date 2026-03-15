@@ -4,7 +4,7 @@ import anneMeme from '@/app/assets/photos/anne_hathaway_meme.jpg';
 import { cn } from '@/app/utils/common';
 import { meowScript } from '@/app/utils/fonts';
 
-export function WhatWontBeSection() {
+export function WhatWontBeSection({ id }: { id: string }) {
   const items = [
     'oczepin',
     'rzucania bukietem',
@@ -18,6 +18,7 @@ export function WhatWontBeSection() {
     <SectionContainer
       className="bg-transparent py-16"
       title="Czego nie będzie?"
+      id={id}
     >
       <div className="relative mt-12 w-full max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-center gap-12">
         {/* Floating Photo (Left Side on Desktop) */}
