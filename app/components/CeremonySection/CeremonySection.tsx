@@ -39,7 +39,7 @@ export function CeremonySection({ id }: { id: string }) {
             16:00 - 22:00
           </p>
           <p className="text-3xl md:text-4xl text-black mb-2 font-medium tracking-wide">
-            Restauracja Rusalka
+            Restauracja "Rusałka"
           </p>
           <div className="text-gray-600 text-sm md:text-base leading-relaxed">
             <p>ul. Golęcińska 27</p>

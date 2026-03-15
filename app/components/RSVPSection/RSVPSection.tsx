@@ -44,7 +44,7 @@ export function RSVPSection({ id }: { id: string }) {
         </li>
       </ul>
       <p className="text-xl text-weddingRedDark mt-[40px] flex flex-col items-center gap-4">
-        Napisz nam SMS, maila lub wypełnij ankietę{' '}
+        Napisz nam SMS, maila lub wypełnij ankietę do 31.07.2026
         <a
           className="px-7 py-2 border border-weddingRedDark text-weddingRedDark rounded-full text-sm tracking-widest hover:bg-weddingRedDark hover:text-white transition-all duration-300"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeIj1BhVM1A4EqLGAh_LJX95DS7N6ubaPSAxKM6Lv6l_wGp2g/viewform?usp=publish-editor"
