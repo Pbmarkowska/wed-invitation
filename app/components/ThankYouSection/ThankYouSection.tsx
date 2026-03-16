@@ -18,7 +18,7 @@ export function ThankYouSection({ id }: { id: string }) {
               <Image
                 src={malePortrait}
                 alt="Marcin"
-                className="w-[130px] md:w-[220px] aspect-[3/4] object-cover rounded-sm border border-gray-50"
+                className="w-[130px] md:w-[220px] object-cover rounded-sm border border-gray-50"
               />
             </div>
           </div>
@@ -35,7 +35,7 @@ export function ThankYouSection({ id }: { id: string }) {
               <Image
                 src={womanPortrait}
                 alt="Patrycja"
-                className="w-[130px] md:w-[220px] aspect-[3/4] object-cover rounded-sm border border-gray-50"
+                className="w-[130px] md:w-[220px] object-cover rounded-sm border border-gray-50"
               />
             </div>
           </div>

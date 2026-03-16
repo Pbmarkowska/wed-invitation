@@ -43,18 +43,18 @@ export function Hero({ id }: { id: string }) {
                   <Image
                     src={couplePortait4}
                     alt="Patrycja & Marcin Portrait 2"
-                    className="w-[180px] md:w-[260px] h-[240px] md:h-[350px] object-cover"
+                    className="w-[190px] md:w-[260px] object-cover"
                   />
                 </div>
               </div>
 
               {/* Right Image */}
               <div className="transform rotate-3 mt-8 md:mt-12 z-20 transition-transform hover:scale-105 hover:z-40">
-                <div className="bg-white p-3 md:p-4 pb-12 shadow-xl border border-gray-200">
+                <div className="bg-white p-3 md:p-4 pb-10 md:pb-12 shadow-lg border border-gray-200 relative">
                   <Image
                     src={couplePortait3}
                     alt="Patrycja & Marcin Portrait 1"
-                    className="w-[190px] md:w-[270px] h-[250px] md:h-[360px] object-cover"
+                    className="w-[190px] md:w-[260px] object-cover"
                   />
                 </div>
               </div>

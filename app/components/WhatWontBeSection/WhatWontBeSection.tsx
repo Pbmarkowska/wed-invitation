@@ -16,7 +16,7 @@ export function WhatWontBeSection({ id }: { id: string }) {
 
   return (
     <SectionContainer
-      className="bg-transparent py-16"
+      className="bg-transparent py-16 items-center justify-center flex flex-col"
       title="Czego nie będzie?"
       id={id}
     >

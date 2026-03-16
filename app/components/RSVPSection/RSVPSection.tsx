@@ -43,7 +43,7 @@ export function RSVPSection({ id }: { id: string }) {
           </p>
         </li>
       </ul>
-      <p className="text-xl text-weddingRedDark mt-[40px] flex flex-col items-center gap-4">
+      <p className="text-xl text-center text-weddingRedDark mt-[40px] flex flex-col items-center gap-4">
         Napisz nam SMS, maila lub wypełnij ankietę do 31.07.2026
         <a
           className="px-7 py-2 border border-weddingRedDark text-weddingRedDark rounded-full text-sm tracking-widest hover:bg-weddingRedDark hover:text-white transition-all duration-300"
